@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>
-	Hello world! Edited on 22 May 2018
+	Hello world! Edited on 22 May
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
