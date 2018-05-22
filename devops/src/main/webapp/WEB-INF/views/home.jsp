@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>
-	Hello world! Edited for demo with invalid test case.
+	Hello world! Edited for demo with valid test case.
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
