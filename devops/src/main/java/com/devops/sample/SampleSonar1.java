@@ -6,7 +6,6 @@ public class SampleSonar1 {
 		String[] msg = {"One","Two","Three"};
 		
 		
-		asddfasdfssf
 		/*
 		 * Sonar should complaint about this for look
 		 */
