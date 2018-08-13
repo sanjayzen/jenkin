@@ -5,7 +5,6 @@ public class SampleSonar1 {
 	public void print() {
 		String[] msg = {"One","Two","Three"};
 		
-		sdasdasdasdasd
 		
 		/*
 		 * Sonar should complaint about this for look
