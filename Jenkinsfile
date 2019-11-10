@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage('Compile Project') {
 			steps { 
-				withMaven(maven: 'Maven') {
-					bat 'mvn clean install'
-				}
+				bat 'mvn clean install'
 			}
         }
     }
