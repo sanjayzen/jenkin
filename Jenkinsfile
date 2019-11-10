@@ -1,10 +1,12 @@
 pipeline {
-    agent any 
+    agent any
     stages {
-        stage('Stage 1') {
-            steps {
-                echo 'Hello world!' 
-            }
+        stage('Compile Project') {
+			steps { 
+				withMaven(maven: 'Maven') {
+					bat 'mvn clean install'
+				}
+			}
         }
     }
 }
