@@ -4,7 +4,7 @@ pipeline {
         stage('Compile Project') {
 			steps { 
 				bat 'cd devops'
-				bat 'mvn clean install'
+				bat './devops/mvn clean install'
 			}
         }
     }
