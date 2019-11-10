@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('Compile Project') {
 			steps { 
-				bat 'cd devops'
-				bat '/devops/mvn clean install'
+				bat 'mvn -f devops/pom.xml clean install'
 			}
         }
     }
