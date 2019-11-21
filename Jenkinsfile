@@ -2,8 +2,9 @@ pipeline {
     agent any
     environment {
         //Use Pipeline Utility Steps plugin to read information from pom.xml into env variables
-        IMAGE = readMavenPom('/devops/pom.xml').getArtifactId()
-        VERSION = readMavenPom('/devops/pom.xml').getVersion()
+	def pom = readMavenPom file: "/devops/pom.xml"
+        IMAGE = pom.getArtifactId()
+        VERSION = pom.getVersion()
     }
     stages {
         stage('Compile Project') {
