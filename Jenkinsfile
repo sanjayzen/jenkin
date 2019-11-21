@@ -16,7 +16,7 @@ pipeline {
 	stage('Stage 2') {
             steps {
                 echo 'Will kick off another job!' 
-		    build job: 'fct-pipeline', wait: false, parameters: [string(name: 'ReportVersion', value: '1.0.1'), string(name: 'ServerVersion', value: '1.0.1')]
+		    build job: 'remote-script-demo-1', wait: false, parameters: [string(name: 'ReportVersion', value: '1.0.1'), string(name: 'ServerVersion', value: '1.0.1')]
             }
         }
     }
