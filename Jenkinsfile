@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         //Use Pipeline Utility Steps plugin to read information from pom.xml into env variables
-	def pom = readMavenPom file: "*/devops/pom.xml"
+	def pom = readMavenPom file: "/devops/pom.xml"
         IMAGE = pom.getArtifactId()
         VERSION = pom.getVersion()
     }
