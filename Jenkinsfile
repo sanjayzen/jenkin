@@ -16,7 +16,7 @@ pipeline {
 	stage('Stage 2') {
             steps {
                 echo 'Will kick off another job!' 
-		    build job: 'fct-pipeline', wait: false, parameters: [string(name: 'HELLO', value: "${IMAGE}")]
+		    build job: 'fct-pipeline', wait: false, parameters: [string(name: 'HELLO', value: "${VERSION}")]
             }
         }
     }
