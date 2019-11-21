@@ -16,7 +16,7 @@ pipeline {
 	stage('Stage 2') {
             steps {
                 echo 'Will kick off another job!' 
-		    build job: 'fct-pipeline', wait: false, properties([[$class: 'GitlabLogoProperty', repositoryName: ''], parameters([text(defaultValue: '1.1.1', description: '', name: 'ReportVersion'), text(defaultValue: '2.2.2', description: '', name: 'ServerVersion')])])
+		    build job: 'fct-pipeline', wait: false, parameters: [string(name: 'ReportVersion', value: '1.0.1'), string(name: 'ServerVersion', value: '1.0.1')]
             }
         }
     }
