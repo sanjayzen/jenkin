@@ -12,7 +12,7 @@
 		<junit.version>3.8.1</junit.version>
 		<portlet-api.version>1.0</portlet-api.version>
 		<servlet-api.version>2.3</servlet-api.version>
-		<springframework.version>2.0.6</springframework.version>	
+		<springframework.version>5.2.20.RELEASE</springframework.version>	
 	</properties>
 
 	<dependencies>
